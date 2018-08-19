@@ -9,9 +9,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DependencyInjection-master\src\DI.Abstractions\DI.Abstractions.csproj" />
     <ProjectReference Include="..\Hosting-master\src\Microsoft.AspNetCore.Hosting.Abstractions\Microsoft.AspNetCore.Hosting.Abstractions.csproj" />
     <ProjectReference Include="..\Hosting-master\src\Microsoft.AspNetCore.Hosting\Microsoft.AspNetCore.Hosting.csproj" />
     <ProjectReference Include="..\MetaPackages-master\src\Microsoft.AspNetCore\Microsoft.AspNetCore.csproj" />
+    <ProjectReference Include="..\Options-master\src\Microsoft.Extensions.Options.ConfigurationExtensions\Microsoft.Extensions.Options.ConfigurationExtensions.csproj" />
+    <ProjectReference Include="..\Options-master\src\Microsoft.Extensions.Options\Microsoft.Extensions.Options.csproj" />
   </ItemGroup>
 
 </Project>
