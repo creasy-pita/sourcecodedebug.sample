@@ -209,6 +209,7 @@ namespace Microsoft.AspNetCore.Hosting.Internal
 
                 var startupFilters = _applicationServices.GetService<IEnumerable<IStartupFilter>>();
                 Action<IApplicationBuilder> configure = _startup.Configure;
+                //TBD 类似 中间件原理
                 foreach (var filter in startupFilters.Reverse())
                 {
                     configure = filter.Configure(configure);
